@@ -1,0 +1,14 @@
+com/sylvana/ReactNativeFlipper.java
+ com.sylvana.ReactNativeFlipper
+ com.sylvana.ReactNativeFlipper$1
+ com.sylvana.ReactNativeFlipper$2
+ com.sylvana.ReactNativeFlipper$2$1
+com/sylvana/MainApplication.java
+ com.sylvana.MainApplication
+ com.sylvana.MainApplication$1
+com/sylvana/MainActivity.java
+ com.sylvana.MainActivity
+com/sylvana/BuildConfig.java
+ com.sylvana.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

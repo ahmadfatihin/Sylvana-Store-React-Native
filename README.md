@@ -9,4 +9,5 @@
   npm install -g react-native-cli
   ```
  - Run `npm install` in folder
+ - Install Dependencies
  - Run `npx react-native start` then `react-native run-android`

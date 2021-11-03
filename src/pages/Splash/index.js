@@ -5,7 +5,7 @@ import {Logo, Watermark, Watermarklogo} from '../../assets';
 export default class Splash extends Component {
   componentDidMount() {
     setTimeout(() => {
-      this.props.navigation.replace('Home');
+      this.props.navigation.replace('MainApp');
     }, 3000);
   }
 

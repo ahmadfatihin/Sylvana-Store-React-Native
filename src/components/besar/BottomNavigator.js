@@ -1,6 +1,6 @@
 import {View, Text, TouchableOpacity} from 'react-native';
 
-function MyTabBar({state, descriptors, navigation}) {
+const BottomNavigator = ({state, descriptors, navigation}) => {
   return (
     <View style={{flexDirection: 'row'}}>
       {state.routes.map((route, index) => {
@@ -49,4 +49,6 @@ function MyTabBar({state, descriptors, navigation}) {
       })}
     </View>
   );
-}
+};
+
+export default BottomNavigator;

@@ -10,7 +10,11 @@ const MainApp = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="ListProduk" component={ListProduk} />
+      <Tab.Screen
+        name="ListProduk"
+        component={ListProduk}
+        options={{title: 'Produk'}}
+      />
       <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>
   );

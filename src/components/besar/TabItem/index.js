@@ -3,13 +3,24 @@ import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {
   IconHome,
   IconHomeAktif,
-  IconBaju,
-  IconBajuAktif,
+  IconProduk,
+  IconProdukAktif,
   IconProfile,
   IconProfileAktif,
 } from '../../../assets';
 
 const TabItem = ({isFocused, onPress, onLongPress, label}) => {
+  const Icon = () => {
+    if (label === 'Home') {
+      return isFocused ? <IconHomeAktif /> : <IconHome />;
+    }
+    if (label === 'Produk') {
+      return isFocused ? <IconProdukAktif /> : <IconProduk />;
+    }
+    if (label === 'Profile') {
+      return isFocused ? <IconProfileAktif /> : <IconProfile />;
+    }
+  };
   return (
     <TouchableOpacity
       accessibilityRole="button"

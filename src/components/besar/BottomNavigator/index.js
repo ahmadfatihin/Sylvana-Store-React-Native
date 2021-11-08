@@ -1,10 +1,10 @@
-imp;
-import {View, Text, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {View, StyleSheet} from 'react-native';
 import TabItem from '../TabItem';
 
 const BottomNavigator = ({state, descriptors, navigation}) => {
   return (
-    <View style={{flexDirection: 'row'}}>
+    <View style={styles.container}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =
@@ -50,3 +50,11 @@ const BottomNavigator = ({state, descriptors, navigation}) => {
 };
 
 export default BottomNavigator;
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    backgroundColor: '#22668A',
+    paddingVertical: 8,
+    paddingHorizontal: 30,
+  },
+});

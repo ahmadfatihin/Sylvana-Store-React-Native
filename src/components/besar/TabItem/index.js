@@ -1,5 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {
+  IconHome,
+  IconHomeAktif,
+  IconBaju,
+  IconBajuAktif,
+  IconProfile,
+  IconProfileAktif,
+} from '../../../assets';
 
 const TabItem = ({isFocused, onPress, onLongPress, label}) => {
   return (

@@ -29,11 +29,18 @@ const TabItem = ({isFocused, onPress, onLongPress, label}) => {
       onPress={onPress}
       onLongPress={onLongPress}
       style={{flex: 1}}>
-      <Text style={{color: isFocused ? '#673ab7' : '#222'}}>{label}</Text>
+      <Icon />
+      <Text style={styles.text(isFocused)}>{label}</Text>
     </TouchableOpacity>
   );
 };
 
 export default TabItem;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  text: isFocused => ({
+    color: isFocused ? '#FFFFFF' : '#6AB1D7',
+    fontSize: 11,
+    marginTop: 4,
+  }),
+});

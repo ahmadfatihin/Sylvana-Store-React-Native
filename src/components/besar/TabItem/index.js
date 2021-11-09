@@ -24,11 +24,9 @@ const TabItem = ({isFocused, onPress, onLongPress, label}) => {
   };
   return (
     <TouchableOpacity
-      accessibilityRole="button"
-      accessibilityState={isFocused ? {selected: true} : {}}
       onPress={onPress}
       onLongPress={onLongPress}
-      style={{flex: 1}}>
+      style={styles.container}>
       <Icon />
       <Text style={styles.text(isFocused)}>{label}</Text>
     </TouchableOpacity>
@@ -38,6 +36,10 @@ const TabItem = ({isFocused, onPress, onLongPress, label}) => {
 export default TabItem;
 
 const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    flex: 1,
+  },
   text: isFocused => ({
     color: isFocused ? '#FFFFFF' : '#6AB1D7',
     fontSize: 11,

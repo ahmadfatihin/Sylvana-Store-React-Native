@@ -20,6 +20,7 @@ const TabItem = ({isFocused, onPress, onLongPress, label}) => {
     if (label === 'Profile') {
       return isFocused ? <IconProfileAktif /> : <IconProfile />;
     }
+    return <IconHome />;
   };
   return (
     <TouchableOpacity

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
-import {HeaderComponent} from '../../components';
+import {HeaderComponent} from '../../components/besar';
 import {colors} from '../../utils';
 
 export default class Home extends Component {
@@ -8,7 +8,6 @@ export default class Home extends Component {
     return (
       <View style={styles.page}>
         <HeaderComponent />
-        <Text>Home Screen</Text>
       </View>
     );
   }

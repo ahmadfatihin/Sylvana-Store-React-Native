@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
+import {colors} from './../../../utils';
 
 export default class HeaderComponent extends Component {
   render() {
     return (
-      <View>
-        <Text> textInComponent </Text>
+      <View style={styles.container}>
+        <Text> Header </Text>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {backgroundColor: colors.primary, height: 125},
+});

@@ -17,8 +17,9 @@ export default class HeaderComponent extends Component {
 const styles = StyleSheet.create({
   container: {backgroundColor: colors.primary, height: responsiveHeight(125)},
   searchSection:{
-    backgroundColor= colors.white
-  }
+    backgroundColor= colors.white,
+    borderRadius=5,
+  },
   input: {
     fontSize: 16,
   },

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View, TextInput} from 'react-native';
+import {StyleSheet, View, TextInput} from 'react-native';
 import {colors, responsiveHeight} from './../../../utils';
 
 export default class HeaderComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View>
-          <TextInput placeholder="Cari Produk..." />
+        <View style={styles.searchSection}>
+          <TextInput placeholder="Cari Produk..." style={styles.input} />
         </View>
       </View>
     );
@@ -16,4 +16,10 @@ export default class HeaderComponent extends Component {
 
 const styles = StyleSheet.create({
   container: {backgroundColor: colors.primary, height: responsiveHeight(125)},
+  searchSection:{
+    backgroundColor= colors.white
+  }
+  input: {
+    fontSize: 16,
+  },
 });

@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View, TextInput} from 'react-native';
 import {colors, responsiveHeight} from './../../../utils';
 
 export default class HeaderComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text> Header </Text>
+        <View>
+          <TextInput placeholder="Cari Produk..." />
+        </View>
       </View>
     );
   }

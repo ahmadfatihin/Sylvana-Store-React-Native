@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
-import {colors} from './../../../utils';
+import {colors, responsiveHeight} from './../../../utils';
 
 export default class HeaderComponent extends Component {
   render() {
@@ -13,5 +13,5 @@ export default class HeaderComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {backgroundColor: colors.primary, height: 125},
+  container: {backgroundColor: colors.primary, height: responsiveHeight(125)},
 });

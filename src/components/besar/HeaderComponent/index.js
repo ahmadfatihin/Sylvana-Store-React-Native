@@ -2,16 +2,20 @@ import React, {Component} from 'react';
 import {StyleSheet, View, TextInput} from 'react-native';
 import {colors, responsiveHeight} from './../../../utils';
 import {IconCari} from '../../../assets';
+import {Button} from './../../../components';
 
 export default class HeaderComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.wrapper}>
+          {/* Input Pencarian */}
           <View style={styles.searchSection}>
             <IconCari />
             <TextInput placeholder="Cari Produk..." style={styles.input} />
           </View>
+
+          <Button icon="keranjang" />
         </View>
       </View>
     );

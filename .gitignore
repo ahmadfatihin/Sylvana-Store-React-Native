@@ -103,3 +103,4 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
+*.bin

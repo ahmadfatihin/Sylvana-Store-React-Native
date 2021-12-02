@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, TextInput} from 'react-native';
 import {colors, responsiveHeight} from './../../../utils';
 import {IconCari} from '../../../assets';
-import {Button} from './../../../components';
+import {Button, Spacing} from './../../../components';
 
 export default class HeaderComponent extends Component {
   render() {
@@ -14,6 +14,7 @@ export default class HeaderComponent extends Component {
             <IconCari />
             <TextInput placeholder="Cari Produk..." style={styles.input} />
           </View>
+          <Spacing width={10} />
 
           <Button icon="keranjang" />
         </View>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {IconKeranjang, IconBack, IconSubmit} from '../../../assets';
+import {colors} from '../../../utils';
 
 const Button = ({icon}) => {
   const Icon = () => {
@@ -16,7 +17,7 @@ const Button = ({icon}) => {
   };
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity style={styles.container}>
       <Icon />
     </TouchableOpacity>
   );
@@ -24,4 +25,10 @@ const Button = ({icon}) => {
 
 export default Button;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: colors.white,
+    padding: 10,
+    borderRadius: 10,
+  },
+});

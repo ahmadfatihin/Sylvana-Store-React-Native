@@ -1,5 +1,7 @@
 # Sylvana-Store-React-Native
 
+Sylvama Store App with React Native
+
 ## How to Run this App
 - Install node.js
 - Install Chocolately then install openjdk
